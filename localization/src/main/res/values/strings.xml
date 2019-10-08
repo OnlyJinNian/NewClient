@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Localization</string>
+    <string name="tv_local">Localization</string>
+    <string name="tv_hello">Hello World!</string>
+    <string name="title">welcome</string>
+    <string name="message">This is a message</string>
+    <string name="buttonMsg">button</string>
+</resources>

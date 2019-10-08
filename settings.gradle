@@ -1,0 +1,1 @@
+include ':app', ':sp', ':createxml01', ':createxml02', ':readxml1', ':createsql', ':uidemo', ':Navigation', ':navigationdemotwo', ':navViewModel', ':localization'

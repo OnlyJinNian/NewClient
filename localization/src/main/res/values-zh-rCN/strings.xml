@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">本地化</string>
+    <string name="tv_hello">你好  世界！</string>
+    <string name="tv_local">本地化</string>
+    <string name="title">欢迎光临</string>
+    <string name="message">这是一条信息</string>
+    <string name="buttonMsg">按键</string>
+</resources>

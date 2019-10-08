@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:text="Display"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="50dp">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="左边" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="右边" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_btns"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="开关" />
+
+    <LinearLayout
+        android:id="@+id/ll_pro"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch1"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:indeterminate="true" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ll_pro"
+        android:layout_marginTop="15dp"
+        android:max="200"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginRight="30dp"
+            android:hint="请输入数值"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_qd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:text="确定"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <RadioGroup
+            android:id="@+id/radio1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="iphone  " />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="android" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/android"
+             />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_checks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_ch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="语文" />
+
+        <CheckBox
+            android:id="@+id/cb_math"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="数学" />
+
+        <CheckBox
+            android:id="@+id/cb_en"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="英语" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_checks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+</RelativeLayout>

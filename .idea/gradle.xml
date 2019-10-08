@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Navigation" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/createsql" />
+            <option value="$PROJECT_DIR$/createxml01" />
+            <option value="$PROJECT_DIR$/createxml02" />
+            <option value="$PROJECT_DIR$/readxml1" />
+            <option value="$PROJECT_DIR$/sp" />
+            <option value="$PROJECT_DIR$/uidemo" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
